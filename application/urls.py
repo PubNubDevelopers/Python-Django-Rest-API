@@ -1,4 +1,4 @@
-"""tutorial URL Configuration
+"""application URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from rest_framework import routers
-from tutorial.quickstart import views
+from application.API import views
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
